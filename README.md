@@ -1,2 +1,9 @@
-# CO555-Mobile-Apps-2023
- Repository with the code for the mobile apps assignment
+# Mobile App - Chainmail
+
+| Author | Details |
+| ---- | ---- |
+**Name**: | Arbaaz Patwari  |
+**Student ID**: | 22133895 |
+**Course:** | Software Engineering |
+**Module**: | CO555 |
+**Started**: | April 2022 | 
