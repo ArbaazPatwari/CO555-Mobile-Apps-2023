@@ -2,7 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Chainmail_app" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:background">@color/gold</item>
+        <item name="android:textColor">@color/purple</item>
     </style>
 
     <style name="Theme.Chainmail_app" parent="Base.Theme.Chainmail_app" />
