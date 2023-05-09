@@ -2,6 +2,7 @@ package com.example.chainmail_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,29 +23,25 @@ public class sign_in_page extends AppCompatActivity {
         String examplePassword = "admin";
 
         btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View view) {
-               System.out.println(em1.getText());
-               loginCheck();
-            }
+                System.out.println(em1.getText());
+                System.out.println(ps1.getText());
 
-            public void loginCheck() {
-                boolean pass1 = false;
+                String inputEmail = em1.getText().toString();
+                String inputPassword = ps1.getText().toString();
 
-                if (exampleEmail.equals(em1.getText()))
+                String exampleEmail = "admin@android.com";
+                String examplePassword = "admin";
+
+                if (inputEmail.equals(exampleEmail) && inputPassword.equals(examplePassword))
                 {
-                    System.out.println("Email correct");
-                    pass1 = true;
-                }
-                else if (examplePassword.equals(ps1.getText()))
-                {
-                    System.out.print("Password correct");
-                    pass1 = false;
+                    Intent intent = new Intent(sign_in_page.this, inbox_page.class);
+                    startActivity(intent);
                 }
                 else
                 {
-                    System.out.println("No information entered");
-                    pass1 = false;
+                    System.out.println("Your credentials are not correct");
                 }
             }
         });
