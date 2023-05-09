@@ -34,8 +34,9 @@ public class sign_in_page extends AppCompatActivity {
                 String exampleEmail = "admin@android.com";
                 String examplePassword = "admin";
 
-                if (inputEmail.equals(exampleEmail) && inputPassword.equals(examplePassword))
+                if ((inputEmail.equals(exampleEmail) && inputPassword.equals(examplePassword)))
                 {
+                    //System.out.println("Correct comparisn");
                     Intent intent = new Intent(sign_in_page.this, inbox_page.class);
                     startActivity(intent);
                 }

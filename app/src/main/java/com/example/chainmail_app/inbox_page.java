@@ -16,7 +16,7 @@ public class inbox_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inbox_page);
 
-        Toolbar toolbar = findViewById(R.id.inbox_toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = findViewById(R.id.inbox_toolbar);
+        //setSupportActionBar(toolbar);
     }
 }
