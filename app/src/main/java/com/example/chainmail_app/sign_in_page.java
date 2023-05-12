@@ -36,7 +36,7 @@ public class sign_in_page extends AppCompatActivity {
 
                 if ((inputEmail.equals(exampleEmail) && inputPassword.equals(examplePassword)))
                 {
-                    //System.out.println("Correct comparisn");
+                    System.out.println("Correct credentials");
                     Intent intent = new Intent(sign_in_page.this, inbox_page.class);
                     startActivity(intent);
                 }
